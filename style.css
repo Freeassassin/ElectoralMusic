@@ -1,0 +1,104 @@
+html
+{
+	height: 100%;	
+}
+body 
+{
+	margin: 0px;  
+	height: 100%;
+}
+#mainbody
+{
+	height: 100%;
+	padding: 10px;
+	
+}
+#header
+{
+	display: table;
+	width: 100%;
+	height: 10%;
+}
+#parent
+{	
+	width: 100%;
+	display: table-row;
+	background: #85c0ff;
+}
+#logotxt
+{
+	font-family: comic-sans;
+	font-size: 30px;
+	padding-left: 20px;
+}
+#logo
+{
+	width: 50%;
+	display: table-cell;	
+}
+#headerInfo
+{
+
+	display: table-cell;
+}
+form#login
+{
+	display: table-row;
+	width: 100%;
+		
+}
+#controlpnl
+{
+	display: table;
+	width: 100%;
+	height: auto;
+	background: #85c0ff;
+}
+#vid
+{
+	width: 50%;
+	display: table-cell;
+}
+#snginput
+{
+	display: table-cell;
+	margin: auto;
+	contain: content;
+}
+#tchrsong
+{
+
+    margin: 25% auto 25% auto;
+    position:relative;	
+    top: 25%;
+    width: 50%;
+    background-color:blue;
+    
+}
+#playlist
+{
+    margin: auto;
+    position:relative;	
+    top: 25%;
+    width: 50%;	
+    display: grid;
+}
+
+#addsong
+{
+    margin: auto;
+    position:relative;	
+    top: 25%;
+    width: 50%;
+    height: 50%;
+    display: grid;
+}
+#queue
+{
+	background-color: green;
+	width: 100%;
+	height: auto;	
+	margin: 20px 0px 0px 0px;
+}
+
+/*cool blue #85c0ff*/

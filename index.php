@@ -2,8 +2,9 @@
 	session_start(); 
 	require 'header.php';
 ?>
-	<div class="mainbody">
+	<div id="mainbody" class="mainbody">
 		<?php
+		require'mainBody.php';
 			if (isset($_SESSION['userId'])) 
 			{
 				require'mainBody.php';
@@ -15,5 +16,5 @@
 
 	</div>
 <?php
-	require 'footer.php';
+	//require 'footer.php';
 ?>

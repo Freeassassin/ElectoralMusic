@@ -6,14 +6,21 @@
 	<title>ElectoralMusic</title>
 </head>
 <body>
-	<div class="header">
-		
-
-		<div class="header" id="logo">
-			<h1>LOGO</h1>
+	<div id ="header"class="header">
+		<div id="parent" class="header">
+			<div class="header" id="logo">
+				<h1 id="logotxt">LOGO</h1>
+			</div>
+			<div class="header" id="headerInfo">	
+				<div class="header" id="loginForm">
+					<form action="login.php" class="header" id="login">
+						<input type="text" name="username" placeholder="Username">
+						<input type="password" name="password" placeholder="Password">
+						<button type="submit">Login</button>
+					</form>
+				</div>
+			</div>
 		</div>
-		
-		<div class="header" id="headerInfo">	
 			<?php
 			/* 
 				if (isset($_SESSION['userId']))
@@ -34,12 +41,19 @@
 				}else
 				{
 					echo '
-					<div class="header" id="loginForm">
-						<form action="login.php" class="header" id="login">
-							<input type="text" name="username" placeholder="Username">
-							<input type="password" name="password" placeholder="Password">
-							<button type="submit">Login</button>
-						</form>
+					<div id="parent" class="header">
+						<div class="header" id="logo">
+							<h1 id="logotxt">LOGO</h1>
+						</div>
+						<div class="header" id="headerInfo">	
+							<div class="header" id="loginForm">
+								<form action="login.php" class="header" id="login">
+									<input type="text" name="username" placeholder="Username">
+									<input type="password" name="password" placeholder="Password">
+									<button type="submit">Login</button>
+								</form>
+							</div>
+						</div>
 					</div>';
 				} 
 			*/ 
