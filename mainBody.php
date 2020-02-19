@@ -6,11 +6,11 @@
 				<div id="snginput" class="mainbody">
 					<div id="tchrsong" class="mainbody">
 						<form action="playlist.php" id="playlist" class="snginput">
-							<input type="text" name="playlist">
+							<input type="text" name="playlist" placeholder="Playlist Link">
 							<button type="submit">Play</button>
 						</form>
 						<form action="addsong.php" id="addsong" class="snginput">
-							<input type="text" name="song">
+							<input type="text" name="song" placeholder="Song Link">
 							<button type="submit">Add</button>			
 						</form>
 					</div>
@@ -41,16 +41,12 @@
 
 		<div id="queue" class="mainbody">
 			<div id="list" class="mainbody">
-				<ul>
-					<li>f</li>
-					<li>f</li>
-					<li>f</li>
-					<li>f</li>
-					<li>f</li>
-					<li>f</li>
-					<li>f</li>
+				<div>f</div>
+				<div>f</div>
+				<div>j</div>
+				<div>j</div>
+				<div>j</div>
 
-				</ul>
 			</div>
 			<?php
 			/*
@@ -64,3 +60,65 @@
 			*/
 			?>
 		</div>
+		<script type="text/javascript">
+
+
+
+
+
+ 
+function sendmsg() 
+{
+  //Send new messages to the database
+	var message = msginput.value;
+  	var threadid = getcookie("ThreadId");
+	if (message != "") 
+    {
+		var username = getcookie("messengerUname");
+		var xmlhttp=new XMLHttpRequest();
+    	msginput.value = "";
+	  	xmlhttp.open("GET","update-messages.php?username="+username+"&message=" + message+"&ThreadId="+threadid,true);
+    	xmlhttp.send();
+	}
+}
+function change_chatroom(threadid)
+{
+  //Change the the chatroom to a diffrent one
+  document.cookie="ThreadId=" + threadid;
+  update();
+}
+setInterval(function(){ update(); update_requests();update_chatrooms();}, 250);
+</script>
+<script>
+	/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+	var dropdown = document.getElementsByClassName("dropdown-btn");
+	var i;
+	for (i = 0; i < dropdown.length; i++) 
+	{
+	  dropdown[i].addEventListener("click", function() 
+	  {
+	    this.classList.toggle("active");
+	    var dropdownContent = this.nextElementSibling;
+	    if (dropdownContent.style.display === "block") 
+	    {
+	      dropdownContent.style.display = "none";
+	    } 
+	    else 
+	    {
+	      dropdownContent.style.display = "block";
+	    }
+	  });
+	}
+</script>
+<script type="text/javascript">
+	//Show/hide the sidebar
+	$(".sidehide").on('click',function()
+	{
+	  $('.doc').toggleClass("show");
+	});
+	//Hide the sidebar
+	$(".ff").on('click',function()
+	{
+	  $('.doc').toggleClass("show");
+	});
+</script>
