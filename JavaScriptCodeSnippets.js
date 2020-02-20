@@ -228,16 +228,13 @@ for (i = 0; i < dropdown.length; i++)
 	});
 }
 
-// jquary code to change an elements class
-<script type="text/javascript">
-	//Show/hide the sidebar
-	$(".sidehide").on('click',function()
-	{
-	  $('.doc').toggleClass("show");
-	});
-	//Hide the sidebar
-	$(".ff").on('click',function()
-	{
-	  $('.doc').toggleClass("show");
-	});
-</script>
+// jquary code to change an elements class / Show/hide the sidebar
+$(".sidehide").on('click',function()
+{
+  $('.doc').toggleClass("show");
+});
+//Hide the sidebar
+$(".ff").on('click',function()
+{
+  $('.doc').toggleClass("show");
+});

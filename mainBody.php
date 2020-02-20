@@ -41,11 +41,19 @@
 
 		<div id="queue" class="mainbody">
 			<div id="list" class="mainbody">
-				<div>f</div>
-				<div>f</div>
-				<div>j</div>
-				<div>j</div>
-				<div>j</div>
+				<div class="queueitem">
+					<div id="songinfo">
+						<div id="parent">
+							<div id="image">
+							<img src="unnamed.jpg" height="50" width="50">								
+							</div>
+							<div id="songname">
+								<p>Never Gonna Give you up</p><p>Rick Astley</p>
+							</div>
+						</div>
+					</div>
+					<div id="likeratio"><h4>69 likes <a href="">like </a><a href="">dislike</a></h4></div>
+				</div>
 
 			</div>
 			<?php
@@ -61,8 +69,44 @@
 			?>
 		</div>
 		<script type="text/javascript">
-			 
+			// helper functions
+			function getcookie(cname) 
+			{
+			  	var name = cname + "=";
+			  	var ca = document.cookie.split(';');
 
+				for(var i=0; i<ca.length; i++) 
+				{
+					var c = ca[i];
+
+					while (c.charAt(0)==' ')
+					{ 
+						c = c.substring(1);
+					}
+
+					if (c.indexOf(name) == 0)
+					{
+						return c.substring(name.length,c.length);
+					}
+				}
+			  	return "";
+			}	
+			function escapehtml(text) 
+			{
+			  return text
+			      .replace(/&/g, "&amp;")
+			      .replace(/</g, "&lt;")
+			      .replace(/>/g, "&gt;")
+			      .replace(/"/g, "&quot;")
+			      .replace(/'/g, "&#039;");
+			}			
+			function updateQueue(youtubelink)
+			{}
+			function () 
+			{}
+			function () 
+			{}
+			setInterval(function(){/* add looping fucntions here */  }, 250);
 		</script>
 
 

@@ -7,6 +7,14 @@ body
 	margin: 0px;  
 	height: 100%;
 }
+p
+{
+	margin: 0px 0px 0px 0px;
+}
+h4
+{
+	margin: auto;
+}
 #mainbody
 {
 	height: 100%;
@@ -23,7 +31,7 @@ body
 {	
 	width: 100%;
 	display: table-row;
-	background: #85c0ff;
+	
 }
 #logotxt
 {
@@ -95,10 +103,44 @@ form#login
 }
 #queue
 {
-	background-color: green;
+	background-color: #85c0ff;
 	width: 100%;
 	height: auto;	
 	margin: 20px 0px 0px 0px;
+	position: relative;
 }
-
+#list
+{
+	display: table;
+	margin: auto;
+	width: 80%;
+}
+.queueitem
+{
+	padding: 0px;
+	margin: auto;
+	background-color: #004d66;
+	display: table-row;
+	position: relative;
+}
+#songinfo
+{
+	height: fit-content;
+	width: 50%;
+	display: table-cell;
+}
+#likeratio
+{
+	margin: auto;
+}
+#image
+{	
+	width: 25%;
+	display: table-cell;
+}
+#songname
+{
+	display: table-cell;
+	position: absolute;
+}
 /*cool blue #85c0ff*/
