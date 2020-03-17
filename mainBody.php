@@ -52,9 +52,8 @@
 							</div>
 						</div>
 					</div>
-					<div id="likeratio"><h4>69 likes <a href="">like </a><a href="">dislike</a></h4></div>
+					<div id="likeratio" align="right"><h4>69 likes <a href="">like </a><a href="">dislike</a></h4></div>
 				</div>
-
 			</div>
 			<?php
 			/*

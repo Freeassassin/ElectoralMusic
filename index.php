@@ -4,13 +4,14 @@
 ?>
 	<div id="mainbody" class="mainbody">
 		<?php
-		require'mainBody.php';
+		//require'mainBody.php';
 			if (isset($_SESSION['userId'])) 
 			{
 				require'mainBody.php';
-			}else
+			}
+			else
 			{
-				require'singUpForm.php';
+				require'signUpForm.php';
 			}
 		?>
 
