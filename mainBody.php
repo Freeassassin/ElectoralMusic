@@ -1,7 +1,7 @@
 		<div id="controlpnl" class="mainbody">
 			<div id="parent" class="mainbody">
 				<div id="vid" class="mainbody">
-					<iframe id="ytplayer" type="text/html" width="720" height="405" src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1" frameborder="0" allowfullscreen></iframe>
+					<iframe id="ytplayer" type="text/html" width="150%" height="150%" src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1" frameborder="0" allowfullscreen></iframe>
 				</div>
 				<div id="snginput" class="mainbody">
 					<div id="tchrsong" class="mainbody">

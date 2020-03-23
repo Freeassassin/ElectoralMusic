@@ -31,4 +31,5 @@ $message = '<p><strong>This is strong text</strong> while this is not.</p>';
 
 mail($to, $subject, $message, $headers);
 
-//
+// sql Users Table
+CREATE TABLE `userdata`.`users` ( `UserIndex` INT(4) NOT NULL AUTO_INCREMENT , `StudentId` VARCHAR(10) NOT NULL , `Password` VARCHAR(40) NOT NULL , `FirstName` VARCHAR(20) NOT NULL , `LastName` VARCHAR(20) NOT NULL , `ProfilePic` VARCHAR(13) NOT NULL , `Teacher` BOOLEAN NOT NULL , `Period1` VARCHAR(7) NOT NULL , `Period2` VARCHAR(7) NOT NULL , `Period3` VARCHAR(7) NOT NULL , `Period4` VARCHAR(7) NOT NULL , `Period5` VARCHAR(7) NOT NULL , `Activated` DOUBLE NOT NULL , `SignUpTime` DATE NOT NULL DEFAULT CURRENT_TIMESTAMP , PRIMARY KEY (`UserIndex`)) ENGINE = InnoDB;

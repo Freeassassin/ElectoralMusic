@@ -143,4 +143,10 @@ form#login
 	display: table-cell;
 	position: absolute;
 }
+#signupform
+{
+	position: absolute;
+	contain: content;
+    margin-left: 25%;
+}
 /*cool blue #85c0ff*/
